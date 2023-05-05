@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Price Movement Prediction</title>
+  </head>
+  <body>
+    <h1>Enter the data to get a price movement prediction</h1>
+    <form action="/predict" method="POST">
+      <label for="sentiment">Sentiment:</label>
+      <input type="number" name="sentiment" id="sentiment" required placeholder="0 or 1">
+      <br>
+      <label for="btc_pct_after_15m">BTCUSDT After 15m:</label>
+      <input type="number" step="any" name="btc_pct_after_15m" id="btc_pct_after_15m" required placeholder="0.5, 0.6, etc.">
+      <br>
+      <label for="btc_pct_after_30m">BTCUSDT After 30m:</label>
+      <input type="number" step="any" name="btc_pct_after_30m" id="btc_pct_after_30m" required placeholder="0.5, 0.6, etc.">
+      <br>
+      <label for="open_price">Open Price:</label>
+      <input type="number" name="open_price" id="open_price" required placeholder="50000, 51000, etc.">
+      <br>
+      <label for="high_price">High Price:</label>
+      <input type="number" name="high_price" id="high_price" required placeholder="51000, 52000, etc.">
+      <br>
+      <label for="low_price">Low Price:</label>
+      <input type="number" name="low_price" id="low_price" required placeholder="49000, 50000, etc.">
+      <br>
+      <label for="close_price">Close Price:</label>
+      <input type="number" name="close_price" id="close_price" required placeholder="51000, 52000, etc.">
+      <br><br>
+      <button type="submit">Get Prediction</button>
+  </form>
+  </body>
+</html>
